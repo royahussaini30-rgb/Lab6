@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Student Coding Club</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar md:navbar-expand bg-1">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Student Coding Club</a>
+
+      <button type="button" class="btn-icon navbar-toggler"
+              data-bs-toggle="drawer" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" id="navbarNav" tabindex="-1"
+              aria-labelledby="navbarNavLabel">
+        <div class="drawer-header">
+          <p class="drawer-title" id="navbarNavLabel">Menu</p>
+          <button type="button" class="btn-close"
+                  data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#activities">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <h1>Student Coding Club</h1>
+    <p>Learn to code with other students through workshops, challenges, and group projects.</p>
+
+    <div id="clubCarousel" class="carousel carousel-overlay">
+      <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <img src="images/banner1.jpg" class="d-block w-100"
+               alt="Web Workshops banner showing a simple HTML heading">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner2.jpg" class="d-block w-100"
+               alt="Coding Practice banner showing a loop through coding challenges">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner3.jpg" class="d-block w-100"
+               alt="Group Projects banner showing Git commands for saving team work">
+        </div>
+      </div>
+
+      <div class="carousel-overlay-controls">
+        <button type="button" class="btn-icon btn-sm btn-subtle theme-secondary"
+                data-bs-target="#clubCarousel" data-bs-slide="prev">
+          <span class="carousel-icon-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button type="button" class="btn-icon btn-sm btn-subtle theme-secondary"
+                data-bs-target="#clubCarousel" data-bs-slide="next">
+          <span class="carousel-icon-next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <h2 class="mt-5 mb-4" id="activities">More Club Activities</h2>
+
+    <div class="row g-4">
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/html-css.jpg" class="w-100"
+               alt="Code editor showing an HTML heading and a CSS colour rule">
+          <div class="card-body">
+            <h3 class="card-title">HTML &amp; CSS Workshop</h3>
+            <p>Build and style a simple webpage.</p>
+
+            <div class="accordion mb-3">
+              <details class="accordion-item">
+                <summary class="accordion-header">Details</summary>
+                <div class="accordion-body">
+                  Add headings and links, then use CSS to change the colours and spacing.
+                </div>
+              </details>
+            </div>
+
+            <button type="button" class="btn-solid theme-primary"
+                    data-bs-toggle="dialog" data-bs-target="#htmlDialog">
+              Workshop Info
+            </button>
+
+            <dialog class="dialog" id="htmlDialog" aria-labelledby="htmlTitle">
+              <div class="dialog-header">
+                <h4 class="dialog-title" id="htmlTitle">HTML &amp; CSS Workshop</h4>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="dialog" aria-label="Close dialog"></button>
+              </div>
+              <div class="dialog-body">
+                <p>Bring a laptop with VS Code installed.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-primary"
+                        data-bs-dismiss="dialog">Close</button>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/python.jpg" class="w-100"
+               alt="Code editor showing a Python loop that prints each topic">
+          <div class="card-body">
+            <h3 class="card-title">Python Practice</h3>
+            <p>Try short Python exercises with other beginners.</p>
+
+            <div class="accordion mb-3">
+              <details class="accordion-item">
+                <summary class="accordion-header">Details</summary>
+                <div class="accordion-body">
+                  Use variables, loops, and lists to write small programs.
+                </div>
+              </details>
+            </div>
+
+            <button type="button" class="btn-solid theme-primary"
+                    data-bs-toggle="dialog" data-bs-target="#pythonDialog">
+              Python Info
+            </button>
+
+            <dialog class="dialog" id="pythonDialog" aria-labelledby="pythonTitle">
+              <div class="dialog-header">
+                <h4 class="dialog-title" id="pythonTitle">Python Practice</h4>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="dialog" aria-label="Close dialog"></button>
+              </div>
+              <div class="dialog-body">
+                <p>Bring a Python exercise you want to try with the group.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-primary"
+                        data-bs-dismiss="dialog">Close</button>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/git.jpg" class="w-100"
+               alt="Terminal showing Git commands for staging and committing a home page">
+          <div class="card-body">
+            <h3 class="card-title">Git &amp; GitHub Basics</h3>
+            <p>Learn how to save changes to a coding project.</p>
+
+            <div class="accordion mb-3">
+              <details class="accordion-item">
+                <summary class="accordion-header">Details</summary>
+                <div class="accordion-body">
+                  Practise staging files, writing a commit message, and pushing changes to GitHub.
+                </div>
+              </details>
+            </div>
+
+            <button type="button" class="btn-solid theme-primary"
+                    data-bs-toggle="dialog" data-bs-target="#gitDialog">
+              Git Info
+            </button>
+
+            <dialog class="dialog" id="gitDialog" aria-labelledby="gitTitle">
+              <div class="dialog-header">
+                <h4 class="dialog-title" id="gitTitle">Git &amp; GitHub Basics</h4>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="dialog" aria-label="Close dialog"></button>
+              </div>
+              <div class="dialog-body">
+                <p>Bring a small project folder so you can practise making commits.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-primary"
+                        data-bs-dismiss="dialog">Close</button>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/debugging.jpg" class="w-100"
+               alt="Code editor showing a console log used to debug a program">
+          <div class="card-body">
+            <h3 class="card-title">Debugging Session</h3>
+            <p>Work through a bug with another club member.</p>
+
+            <div class="accordion mb-3">
+              <details class="accordion-item">
+                <summary class="accordion-header">Details</summary>
+                <div class="accordion-body">
+                  Read the error in the browser console and test one change at a time.
+                </div>
+              </details>
+            </div>
+
+            <button type="button" class="btn-solid theme-primary"
+                    data-bs-toggle="dialog" data-bs-target="#debugDialog">
+              Debugging Info
+            </button>
+
+            <dialog class="dialog" id="debugDialog" aria-labelledby="debugTitle">
+              <div class="dialog-header">
+                <h4 class="dialog-title" id="debugTitle">Debugging Session</h4>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="dialog" aria-label="Close dialog"></button>
+              </div>
+              <div class="dialog-body">
+                <p>Bring the error message and the code that caused it.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-primary"
+                        data-bs-dismiss="dialog">Close</button>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/challenges.jpg" class="w-100"
+               alt="Coding challenge showing three input numbers and their sum">
+          <div class="card-body">
+            <h3 class="card-title">Coding Challenges</h3>
+            <p>Solve short programming problems in pairs.</p>
+
+            <div class="accordion mb-3">
+              <details class="accordion-item">
+                <summary class="accordion-header">Details</summary>
+                <div class="accordion-body">
+                  Explain your solution to your partner and test it with different inputs.
+                </div>
+              </details>
+            </div>
+
+            <button type="button" class="btn-solid theme-primary"
+                    data-bs-toggle="dialog" data-bs-target="#challengeDialog">
+              Challenge Info
+            </button>
+
+            <dialog class="dialog" id="challengeDialog" aria-labelledby="challengeTitle">
+              <div class="dialog-header">
+                <h4 class="dialog-title" id="challengeTitle">Coding Challenges</h4>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="dialog" aria-label="Close dialog"></button>
+              </div>
+              <div class="dialog-body">
+                <p>Choose a beginner challenge when you arrive.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-primary"
+                        data-bs-dismiss="dialog">Close</button>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
+        <article class="card h-100">
+          <img src="images/projects.jpg" class="w-100"
+               alt="Project checklist showing an idea selected and a feature still to build">
+          <div class="card-body">
+            <h3 class="card-title">Project Night</h3>
+            <p>Make progress on a small project with the club.</p>
+
+            <div class="accordion mb-3">
+              <details class="accordion-item">
+                <summary class="accordion-header">Details</summary>
+                <div class="accordion-body">
+                  Sketch an idea, build one feature, and share your progress at the end.
+                </div>
+              </details>
+            </div>
+
+            <button type="button" class="btn-solid theme-primary"
+                    data-bs-toggle="dialog" data-bs-target="#projectDialog">
+              Project Night Info
+            </button>
+
+            <dialog class="dialog" id="projectDialog" aria-labelledby="projectTitle">
+              <div class="dialog-header">
+                <h4 class="dialog-title" id="projectTitle">Project Night</h4>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="dialog" aria-label="Close dialog"></button>
+              </div>
+              <div class="dialog-body">
+                <p>Bring your own idea or join a group that already has one.</p>
+              </div>
+              <div class="dialog-footer">
+                <button type="button" class="btn-solid theme-primary"
+                        data-bs-dismiss="dialog">Close</button>
+              </div>
+            </dialog>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-primary fg-contrast-primary text-center p-3 mt-5">
+    <p class="mb-0">&copy; 2026 Student Coding Club</p>
+  </footer>
+
+</body>
+</html>
